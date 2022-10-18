@@ -1,0 +1,88 @@
+---
+turpe_btinf36:
+  description:
+    "
+      CG:     €/year
+      CC:     €/year
+      CI:     €/year
+      CS.b:   €/kVA/year
+      CS.c:   €/kWh
+    "
+  CG:
+    consommateur:
+      CARD:                   15.72
+      contrat_unique:         14.64
+    autoprod_indiv_avec_inj:  22.92
+    autoprod_indiv_sans_inj:
+      CARD:                   15.72
+      contrat_unique:         14.64
+    autoprod_collectif:
+      CARD:                   19.44
+      contrat_unique:         18.36
+  CC:
+    avec_disp_de_comptage: 18.60
+    sans_disp_de_comptage: 1.44
+  CI: 0
+  CS:
+    # the tariff options
+    CU4:
+      b: 8.52
+      c:
+        - 0.0632 # HPSH
+        - 0.0433 # HCSH
+        - 0.0135 # HPSB
+        - 0.0084 # HCSB
+    CU:
+      b: 9.00
+      c:
+        - 0.0394
+        - 0.0394
+        - 0.0394
+        - 0.0394
+    MU4:
+      b: 9.96
+      c:
+        - 0.0580
+        - 0.0402
+        - 0.0132
+        - 0.0083
+    MUDT:
+      b: 11.04
+      c:
+        - 0.0402
+        - 0.0284
+        - 0.0402
+        - 0.0284
+    LU:
+      b: 77.04
+      c:
+        - 0.0104
+        - 0.0104
+        - 0.0104
+        - 0.0104
+    CU4_autoprod_collective:
+      b: 0.0852
+      c:
+        alloproduit:
+          - 0.0686
+          - 0.0419
+          - 0.0217
+          - 0.0082
+        autoproduit:
+          - 0.0156
+          - 0.0122
+          - 0.0074
+          - 0.0036
+    MU4_autoprod_collective:
+      b: 0.1008
+      c:
+        alloproduit:
+          - 0.0626
+          - 0.0401
+          - 0.0211
+          - 0.0082
+        autoproduit:
+          - 0.0156
+          - 0.0122
+          - 0.0074
+          - 0.0036

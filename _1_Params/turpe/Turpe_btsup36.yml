@@ -1,0 +1,96 @@
+---
+turpe_btsup36:
+  description:
+    "
+      CG:                   €/year
+      CC:                   €/year
+      CI:                   €/year
+      CS.b:                 €/kVA/year
+      CS.c:                 €/kWh
+      CMDPS.alpha:          €/h
+      CER.valeur:           €/kVAr*h
+      CER.flux_injection:   €/kVAr*h
+    "
+  CG:
+    consommateur:
+      CARD:                   108.96 #216.84
+      contrat_unique:         108.96 #188.28
+    autoprod_indiv_avec_inj:  163.56 #311.16
+    autoprod_indiv_sans_inj:
+      CARD:                   108.96 #216.84
+      contrat_unique:         108.96 #188.28
+    autoprod_collectif:
+      CARD:                   163.56 #271.44
+      contrat_unique:         163.56 #242.88
+  CC:
+    avec_disp_de_comptage:    240.24
+    sans_disp_de_comptage:    1.44
+  CI: 0
+  CS:
+    # the tariff options
+    CU4:
+      b:
+        - 12.82 # HPSH
+        - 8.94  # HCSH
+        - 7.99  # HPSB
+        - 6.40  # HCSB
+      c:
+        - 0.0528
+        - 0.0364
+        - 0.0228
+        - 0.0173
+    LU4:
+      b:
+        - 22.04
+        - 13.65
+        - 11.67
+        - 8.12
+      c:
+        - 0.0450
+        - 0.0329
+        - 0.0203
+        - 0.0157
+    CU4_autoprod_collective:
+      b:
+        - 12.89
+        - 8.63
+        - 7.23
+        - 5.84
+      c:
+        alloproduit:
+          - 0.0537
+          - 0.0313
+          - 0.0206
+          - 0.0173
+        autoproduit:
+          - 0.0301
+          - 0.0193
+          - 0.0076
+          - 0.0053
+    LU4_autoprod_collective:
+      b:
+        - 22.56
+        - 13.99
+        - 11.07
+        - 7.97
+      c:
+        alloproduit:
+          - 0.0464
+          - 0.0283
+          - 0.0187
+          - 0.0118
+        autoproduit:
+          - 0.0301
+          - 0.0193
+          - 0.0076
+          - 0.0053
+  WIP:
+    "
+    CMDPS:
+      alpha: 10.52
+    CER:
+      flux_soutirage:
+        tg_phi_max:   0.4
+        valeur:       0.0216
+      flux_injection: 0.0216
+    "

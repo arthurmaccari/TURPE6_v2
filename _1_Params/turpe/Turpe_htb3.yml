@@ -1,0 +1,42 @@
+---
+turpe_htb3:
+  description:
+    "
+      CG.a:              €/contrat/an
+      CI:                €/MWh
+      CC:                €/an/dispositif
+      CS.c:              €/kWh
+      CR.k:              €/kW/km/an
+      CACS.cellules:     €/cellule/an
+      CACS.liaisons:     €/km/an
+      CACS.prime_fixe:   €/kW/an
+      CACS.part_energie: €/kWh
+      CACS.alpha:        €/kW
+      
+      CER
+    "
+  CG:
+    a: 9403.08
+  CI: 0.23
+  CC:
+    compteur_utilisateur:   555.72
+    compteur_gestionnaire: 3094.92
+  CS:
+    c: 0.0033
+  WIP:
+    "
+    CR:
+      k: 0.0581
+    CACS:
+      cellules: 106930.88
+      liaisons:  10135.99
+      alim_secours:
+        HTB2:
+          prime_fixe:   7.41
+          part_energie: 0.0077
+          alpha:        0.3139
+        HTB1:
+          prime_fixe:   5.45
+          part_energie: 0.0131
+          alpha:        0.2325
+    "
